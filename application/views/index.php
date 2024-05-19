@@ -1,17 +1,4 @@
-<div class="header">
-    <div class="container">
-        <div class="right_btn_group">
-            <a href="">О компании</a>
-            <a href="">Вопрос-ответ</a>
-            <a href="">Новости</a>
-        </div>
-        <div class="light_btn_group">
-            <a href="">Войти</a>
-            <a href="">Регистрация</a>
-            <a href=""><img src="./application/assets/img/user_icon.png" alt="user"></a>
-        </div>
-    </div>
-</div>
+
 
 
 
@@ -164,35 +151,6 @@
 
 
 
-
-
-
-
-
-
-<!-- <div class="card" style="width: 18rem;">
-        <img src="./application/assets/img/poco.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <span>
-                <img src="./application/assets/img/star.png" alt="">
-                <img src="./application/assets/img/star.png" alt="">
-                <img src="./application/assets/img/star.png" alt="">
-                <img src="./application/assets/img/star.png" alt="">
-                <img src="./application/assets/img/star.png" alt="">
-
-            </span>
-
-            <span>
-                <img src="./application/assets/img/green_btn_done.png" alt="">
-                в наличии
-            </span>
-            <p class="card-text">Смартфон POCO M4 PRO 5G 4GB/64GB Yellow EU</p>
-            <h4>489.00 byn</h4>
-            
-
-        </div>
-    </div> -->
-
 <div class="pre-footer">
     <span>Подписаться на рассылку новостей</span>
     <span>
@@ -200,3 +158,7 @@
         <button>Отправить</button>
     </span>
 </div>
+
+
+
+

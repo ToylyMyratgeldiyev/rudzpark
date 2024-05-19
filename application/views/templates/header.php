@@ -34,3 +34,19 @@
 </head>
 
 <body>
+
+
+<div class="header">
+	<div class="container">
+		<div class="right_btn_group">
+			<a href="">О компании</a>
+			<a href="">Вопрос-ответ</a>
+			<a href="">Новости</a>
+		</div>
+		<div class="light_btn_group">
+			<a href="">Войти</a>
+			<a href="">Регистрация</a>
+			<a href=""><img src="./application/assets/img/user_icon.png" alt="user"></a>
+		</div>
+	</div>
+</div>

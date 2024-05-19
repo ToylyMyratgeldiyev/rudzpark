@@ -1,33 +1,32 @@
-
 <div class="footer">
-    <div class="container">
-        <div class="up_footer">
-            <div class="logo">
-                <img src="./application/assets/img/logo_footer.svg" alt="">
-            </div>
-            <div class="categories">
-                <a href="">Ноутбуки</a>
-                <a href="">Планшеты</a>
-                <a href="">Смартфоны</a>
-                <a href="">Наушники</a>
-                <a href="">Телевизоры</a>
-                <a href="">Аксессуары</a>
-            </div>
-        </div>
-        <div class="down_footer">
-            <div>
-                <a href="">Политика конфиденциальности</a>
-                <a href="">О компании</a>
-                <a href="">Новости</a>
-                <a href="">Контакты</a>
-            </div>
-            <div>
+	<div class="container">
+		<div class="up_footer">
+			<div class="logo">
+				<img src="./application/assets/img/logo_footer.svg" alt="">
+			</div>
+			<div class="categories">
+				<a href="">Ноутбуки</a>
+				<a href="">Планшеты</a>
+				<a href="">Смартфоны</a>
+				<a href="">Наушники</a>
+				<a href="">Телевизоры</a>
+				<a href="">Аксессуары</a>
+			</div>
+		</div>
+		<div class="down_footer">
+			<div>
+				<a href="">Политика конфиденциальности</a>
+				<a href="">О компании</a>
+				<a href="">Новости</a>
+				<a href="">Контакты</a>
+			</div>
+			<div>
                 <span>
                     Copyright © 2001-2023 RudzPark. All rights reserved
                 </span>
-            </div>
-        </div>
-    </div>
+			</div>
+		</div>
+	</div>
 </div>
 
 

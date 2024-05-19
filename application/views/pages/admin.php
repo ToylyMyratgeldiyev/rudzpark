@@ -1,57 +1,70 @@
 <div class="container">
-
-
 	<div class="row">
 		<div class="col-md-12 mt-4">
 			<div class="card">
 				<div class="card-header">
-					<h4 class="text-center m-3">Add product into DB.</h4>
+					<h4 class="text-center m-3">Добавить в БД: <i>Смартфон, Планшет, Телевизор, Ноутбук</i>.</h4>
 					<div class="btn-group d-flex justify-content-around m-5">
 						<a href="<?php echo base_url('/admin/add'); ?>" style="color:white; text-decoration:none;">
 							<button class="btn btn-primary">
-								Smartphone
+								Add product
 							</button>
-						</a>
-						<br>
-						<a href="#">
-							<button class="btn btn-primary">Tablet</button>
-						</a>
-						<br>
-						<a href="#">
-							<button class="btn btn-primary">Laptop</button>
 						</a>
 					</div>
 				</div>
-				<div class="card-body">
-					<table class="table table-border">
-						<thead>
+			</div>
 
-						<tr>
-							<th>Производитель</th>
-							<th>Модель</th>
-							<th>RAM</th>
-							<th>Встроенная память</th>
-							<th>Цена</th>
-							<th>Edit</th>
-							<th>Delete</th>
+			<div class="card">
+				<div class="card-header">
+					<h4 class="text-center m-3">Добавить в БД: <i>Наушники</i>.</h4>
+					<div class="btn-group d-flex justify-content-around m-5">
+						<a href="<?php echo base_url('/admin/add_airphone'); ?>" style="color:white; text-decoration:none;">
+							<button class="btn btn-primary">
+								Add product
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h4 class="text-center m-3">Редактирование продуктов.</h4>
+					<div class="btn-group d-flex  flex-wrap justify-content-around m-5">
+						<a href="<?php echo base_url('/admin/tv'); ?>" style="color:white; text-decoration:none; ">
+							<button class="btn btn-primary">
+								TV
+								<img src="/application/assets/img/icons/smart-tv.png" alt="" style="width: 20px">
+							</button>
+						</a>
 
-						</tr>
-						</thead>
-						<tbody>
-						<?php foreach ($smartphones as $row) :?>
-							<tr>
-								<td><?= $row->manufacturer; ?></td>
-								<td><?= $row->model; ?></td>
-								<td><?= $row->memory; ?></td>
-								<td><?= $row->internal_memory; ?></td>
-								<td><?= $row->price; ?></td>
-								<td><a href="<?php echo base_url('/edit/'.$row->id); ?>" class="btn btn-success btm-sm">Edit</a></td>
-								<td><a href="<?= base_url('AdminController/delete/'.$row->id) ?>" class="btn btn-danger btm-sm">Delete</a></td>
-							</tr>
-						<?php endforeach; ?>
-						</tbody>
-					</table>
+						<a href="<?php echo base_url('admin/smartphones'); ?>" style="color:white; text-decoration:none;">
+							<button class="btn btn-primary">
+								Smartphones
+								<img src="/application/assets/img/icons/smartphone.png" alt="" style="width: 20px">
+							</button>
+						</a>
 
+						<a href="<?php echo base_url('admin/laptop'); ?>" style="color:white; text-decoration:none;">
+							<button class="btn btn-primary">
+								Laptops
+								<img src="/application/assets/img/icons/laptop.png" alt="" style="width: 20px">
+							</button>
+						</a>
+
+						<a href="<?php echo base_url('admin/tablet'); ?>" style="color:white; text-decoration:none;">
+							<button class="btn btn-primary">
+								Tablet
+								<img src="/application/assets/img/icons/ipad.png" alt="" style="width: 20px">
+							</button>
+						</a>
+
+						<a href="<?php echo base_url('admin/earphones'); ?>" style="color:white; text-decoration:none;">
+							<button class="btn btn-primary" value="earphones">
+								Earphones
+								<img src="/application/assets/img/icons/headphones.png" alt="" style="width: 20px">
+							</button>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

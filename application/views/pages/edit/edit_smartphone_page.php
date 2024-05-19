@@ -9,7 +9,7 @@
 					</div>
 					<div class="card-body">
 						<!--	Здесь base_url('form/save_data') указывает на контроллер Form и метод save_data	-->
-						<form action="<?php echo base_url('AdminController/update/'.$smartphones->id) ?>" method="POST">
+						<form action="<?php echo base_url('UpdateController/updateSmartphone/'.$smartphones->id) ?>" method="POST">
 
 							<!-- Производитель -->
 							<label for="exampleInputEmail1">Производитель</label>
@@ -75,13 +75,9 @@
 							<input type="number" value="<?php echo $smartphones->price ?>" name="price"
 								   class="form-control" id="exampleInputEmail1">
 							<hr>
-							<label for="exampleFormControlSelect1">Разъем для питания</label>
-							<select class="form-control"  name="connect"
-									id="exampleFormControlSelect1">
-								<option value="micro_usb">micro-USB</option>
-								<option value="lightning">Lightning</option>
-								<option value="type_c">Type-C</option>
-							</select>
+							<label for="">Фото товара</label> <br>
+							<input type="file" name="image" id="">
+							<hr>
 
 							<button type="submit" class="btn btn-primary mt-5">Обновить</button>
 						</form>
