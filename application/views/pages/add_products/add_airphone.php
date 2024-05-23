@@ -1,7 +1,8 @@
 <div style=" padding: 50px 0; background: linear-gradient(90deg, #faf0cd, #fab397); ">
 	<div class="container ">
 		<!--	Здесь base_url('form/save_data') указывает на контроллер Form и метод save_data	-->
-		<form action="<?php echo base_url('InsertController/insert_airphone') ?>" method="post" enctype="multipart/form-data">
+		<form action="<?php echo base_url('InsertController/insert_airphone') ?>" method="post"
+			  enctype="multipart/form-data">
 
 			<!-- Производитель -->
 			<label for="manufacturer">Производитель</label>
