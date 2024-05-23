@@ -308,23 +308,53 @@
 </div>
 
 <div class="footer">
-	<div class="container footer-flex">
-		<div class=" row footer-top">
-			<div class=" col-md-12 col-xs-12">
-				<img src="/application/assets/img/logo_footer.svg" alt="">
+	<div class="container">
+		<div class="footer-top">
+			<div class="logo">
+				<a href="/">
+					<img src="/application/assets/img/logo_footer.svg" alt="">
+				</a>
 			</div>
-			<div class=" col-sm-2 col-xs-2 ">Ноутбуки</div>
-			<div class=" col-sm-2 col-xs-2 ">Планшеты</div>
-			<div class=" col-sm-2 col-xs-2">Смартфоны</div>
-			<div class=" col-sm-2 col-xs-2">Наушники</div>
-			<div class=" col-sm-2 col-xs-2">Телевизоры</div>
-			<div class=" col-sm-2 col-xs-2">Аксессуары</div>
+			<div class="catalog">
+				<ul>
+					<li>
+						<a href="">Ноутбуки</a>
+					</li>
+					<li>
+						<a href="">Планшеты</a>
+					</li>
+					<li>
+						<a href="">Смартфоны</a>
+					</li>
+					<li>
+						<a href="">Наушники</a>
+					</li>
+					<li>
+						<a href="">Телевизоры</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div class=" row footer-bottom ">
-			<!--			<div class=" col-sm-3">Политика конфиденциальности</div>-->
-			<div class=" col-sm-3">О компании</div>
-			<div class=" col-sm-3">Контакты</div>
-			<div class="col-sm-6 ms-auto">Copyright © 2001-2023 RudzPark. All rights reserved</div>
+		<div class="footer-bottom">
+			<div class="about">
+				<ul>
+					<li>
+						<a href="">Политика конфиденциальности</a>
+					</li>
+					<li>
+						<a href="">О компании</a>
+					</li>
+					<li>
+						<a href="">Новости</a>
+					</li>
+					<li>
+						<a href="">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<span>Copyright © 2001-2023 RudzPark. All rights reserved</span>
+			</div>
 		</div>
 	</div>
 </div>
