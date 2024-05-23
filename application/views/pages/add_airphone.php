@@ -52,6 +52,11 @@
 			<label for="availble">Вналичии</label>
 			<input type="number" name="availble" class="form-control" id="availble">
 			<small><?php echo form_error('available'); ?></small>
+
+			<hr>
+			label for="rating">Рейтинг товара(временный костыль)</label>
+			<input type="number" min="4.50" max="9.90" step="any" name="rating" class="form-control" id="rating">
+			<small><?php echo form_error('rating'); ?></small>
 			<hr>
 			<label for="image">Фото товара</label> <br>
 			<input type="file" name="image" id="image">

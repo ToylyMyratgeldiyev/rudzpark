@@ -10,7 +10,17 @@ $route['admin'] = 'AdminController/index';
 $route['admin/add'] = 'AddController/add_smartphone';
 $route['admin/add_airphone'] = 'AddController/add_airphone';
 $route['products'] = 'ProductsController/index';
+$route['tablets'] = 'ProductsController/tablets';
+$route['earphones'] = 'ProductsController/earphone';
+$route['laptops'] = 'ProductsController/laptops';
+$route['tv'] = 'ProductsController/tv';
+
+//PRODUCT PAGE
 $route['product/(:any)'] = 'ProductController/index/$1';
+$route['product/tablet/(:any)'] = 'ProductController/tablet/$1';
+$route['product/laptop/(:any)'] = 'ProductController/laptop/$1';
+$route['product/tv/(:any)'] = 'ProductController/tv/$1';
+$route['product/aerphone/(:any)'] = 'ProductController/aerphone/$1';
 
 //VIEW
 $route['admin/smartphones'] = 'ViewController/smartphones';

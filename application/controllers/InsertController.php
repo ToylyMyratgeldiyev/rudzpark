@@ -40,6 +40,7 @@ class InsertController extends CI_Controller
 		$this->form_validation->set_rules('warranty', 'Гарантия', 'required');
 		$this->form_validation->set_rules('price', 'Цена', 'required');
 		$this->form_validation->set_rules('available', 'Вналичии', 'required');
+		$this->form_validation->set_rules('rating', 'Рейтинг товара', 'required');
 
 		if ($this->form_validation->run()) {
 			$data = array(
@@ -60,6 +61,7 @@ class InsertController extends CI_Controller
 				'price' => $this->input->post("price"),
 				'discount' => $this->input->post("discount"),
 				'available' => $this->input->post("available"),
+				'rating' => $this->input->post("rating"),
 				'image_name' => $file_name,
 
 			);
@@ -94,10 +96,13 @@ class InsertController extends CI_Controller
 	public function insert_airphone()
 	{
 		//работа с картинкой
-		$config['allowed_types'] = 'jpg|png';
+
+		$config['allowed_types'] = 'jpg|jpeg|png';
 		$config['encrypt_name'] = true;
 		$config['upload_path'] = './my_uploads/';
 		$this->load->library('upload', $config);
+		$this->upload->set_allowed_types('jpg|jpeg|png');
+
 
 
 		if ($this->upload->do_upload('image')) {
@@ -119,6 +124,7 @@ class InsertController extends CI_Controller
 		$this->form_validation->set_rules('made_in', 'Страна производителя', 'required');
 		$this->form_validation->set_rules('warranty', 'Гарантия', 'required');
 		$this->form_validation->set_rules('price', 'Цена', 'required');
+		$this->form_validation->set_rules('rating', 'Рейтинг товара', 'required');
 		$this->form_validation->set_rules('availble', 'В наличии', 'required');
 
 		if ($this->form_validation->run()) {
@@ -135,6 +141,7 @@ class InsertController extends CI_Controller
 				'price' => $this->input->post("price"),
 				'discount' => $this->input->post("discount"),
 				'availble' => $this->input->post("availble"),
+				'rating' => $this->input->post("rating"),
 				'image_name' => $file_name,
 
 			);

@@ -15,13 +15,19 @@
 
 	<title>Product</title>
 </head>
-<body class="product_body">
+<body class="product_body" style="justify-content: start;">
 	<div class="container">
 		<div class="product_first_side">
 			<div class="img">
 				<img src="<?= "/my_uploads/".$smartphones->image_name; ?>" alt="image_product">
 			</div>
+
+
+
 			<div>
+				<div class="title_prod">
+					<h3><?= $smartphones->manufacturer." ".$smartphones->model." ".$smartphones->memory."/".$smartphones->internal_memory." " ?></h3>
+				</div>
 				<div class="discount">
 					<?= $smartphones->discount ? ceil($smartphones->price - $smartphones->price * ($smartphones->discount / 100)) : '' ?> руб.
 				</div>

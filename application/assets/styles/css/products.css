@@ -5,38 +5,28 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   height: 100vh;
 }
-.productBody main .container {
+.productBody main .container div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 1200px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.productBody main .container a {
+.productBody main .container div a {
   text-decoration: none;
   color: black;
 }
-.productBody main .container a .item {
+.productBody main .container div a .item {
   margin: 10px;
-  width: 200px;
+  width: 300px;
   -webkit-box-shadow: -1px -2px 8px 0px rgba(34, 60, 80, 0.2);
           box-shadow: -1px -2px 8px 0px rgba(34, 60, 80, 0.2);
   padding: 5px;
 }
-.productBody main .container a .item .img {
+.productBody main .container div a .item .img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,14 +34,14 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.productBody main .container a .item .img img {
+.productBody main .container div a .item .img img {
   width: 70%;
 }
-.productBody main .container a .item .price_name_raiting h4 {
+.productBody main .container div a .item .price_name_raiting h4 {
   margin-top: 10px;
   font-size: 18px;
 }
-.productBody main .container a .item .price_name_raiting .rainting {
+.productBody main .container div a .item .price_name_raiting .rainting {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,10 +50,10 @@
           align-items: center;
   font-size: 12px;
 }
-.productBody main .container a .item .price_name_raiting .rainting span {
+.productBody main .container div a .item .price_name_raiting .rainting span {
   margin-right: 10px;
 }
-.productBody main .container a .item .price_name_raiting .price {
+.productBody main .container div a .item .price_name_raiting .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,9 +62,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.productBody main .container a .item .options {
+.productBody main .container div a .item .options {
   font-size: 10px;
 }
-.productBody main .container a .item .options td, .productBody main .container a .item .options th {
+.productBody main .container div a .item .options td, .productBody main .container div a .item .options th {
   padding: 5px;
 }

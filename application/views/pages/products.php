@@ -39,7 +39,9 @@
 <div class="header">
 	<div class="container">
 		<div class="right_btn_group">
-			<a href="">О компании</a>
+			<a href="/">
+				<img src="/application/assets/img/logo_footer.svg" alt="">
+			</a>
 			<a href="">Вопрос-ответ</a>
 			<a href="">Новости</a>
 		</div>
@@ -53,17 +55,18 @@
 
 
 <main>
-	<div class="container">
-		<?php foreach ($smartphones as $row) :?>
-			<a href="<?= base_url('product/'.$row->id) ?>">
-				<div class="item">
-					<div class="img">
-						<img src="<?= "/my_uploads/".$row->image_name; ?>" alt="">
-					</div>
-					<div class="price_name_raiting">
-						<!--XIAOMI REDMI 10 2022 6GB/128GB (СЕРЫЙ)-->
-						<h4><?= $row->manufacturer." ".$row->model." ".$row->memory."/".$row->internal_memory." (".$row->color.")" ?></h4>
-						<div class="rainting">
+	<div class="container ">
+		<div>
+			<?php foreach ($smartphones as $row) : ?>
+				<a href="<?= base_url('product/' . $row->id) ?>">
+					<div class="item">
+						<div class="img">
+							<img src="<?= "/my_uploads/" . $row->image_name; ?>" alt="">
+						</div>
+						<div class="price_name_raiting">
+							<!--XIAOMI REDMI 10 2022 6GB/128GB (СЕРЫЙ)-->
+							<h4><?= $row->manufacturer . " " . $row->model . " " . $row->memory . "/" . $row->internal_memory . " (" . $row->color . ")" ?></h4>
+							<div class="rainting">
 					<span>
 						<img src="/application/assets/img/star.png" alt="">
 						<img src="/application/assets/img/star.png" alt="">
@@ -71,88 +74,54 @@
 						<img src="/application/assets/img/star.png" alt="">
 						<img src="/application/assets/img/star.png" alt="">
 					</span>
-							<span>10/10</span>
+								<span>10/10</span>
+							</div>
+							<div class="price">
+								<?php if ($row->discount){?>
+								<span style=" font-weight: bold;"><?= $row->discount ? ceil($row->price - $row->price * ($row->discount / 100)) : '' ?> руб. 00 коп.	</span>
+								<?php } ?>
+								<span style="font-weight: bold; <?= $row->discount ? ' color:red; text-decoration: line-through; text-decoration-color: red;' : '' ?>"><?= $row->price; ?> руб. 00 коп.</span>
+							</div>
 						</div>
-						<div class="price">
-							<!--$prcie * ($percent / 100);-->
-							<span style=" font-weight: bold;"><?= $row->discount ? ceil($row->price - $row->price * ($row->discount / 100))  : '' ?>
-						руб. 00 коп.
-					</span>
-							<span style="font-weight: bold; <?= $row->discount ? ' color:red; text-decoration: line-through; text-decoration-color: red;' : '' ?>"><?= $row->price; ?>
-						руб. 00 коп.
-					</span>
+
+						<div class="options">
+							<table class="table">
+								<tbody>
+								<tr>
+									<th scope="row">Оперативная память:</th>
+									<td><?= $row->memory; ?> ГБ</td>
+								</tr>
+								<tr>
+									<th scope="row">Встроенная память:</th>
+									<td><?= $row->internal_memory; ?> ГБ</td>
+								</tr>
+								<tr>
+									<th scope="row">Тип экраана:</th>
+									<td><?= $row->screen_tech; ?></td>
+								</tr>
+								<tr>
+									<th scope="row">Основная камера:</th>
+									<td><?= $row->camera . "Мп" ?></td>
+								</tr>
+								<tr>
+									<th scope="row">Емкость аккумулятора:</th>
+									<td><?= $row->accumulator; ?> мАч</td>
+								</tr>
+								<tr>
+									<th scope="row">Цвет:</th>
+									<td><?= $row->color; ?></td>
+								</tr>
+
+								</tbody>
+							</table>
 						</div>
+
 					</div>
-
-					<div class="options">
-						<table class="table">
-							<tbody>
-							<tr>
-								<th scope="row">Оперативная память:</th>
-								<td><?= $row->memory; ?> ГБ</td>
-							</tr>
-							<tr>
-								<th scope="row">Встроенная память:</th>
-								<td><?= $row->internal_memory; ?> ГБ</td>
-							</tr>
-							<tr>
-								<th scope="row">Тип экраана:</th>
-								<td><?= $row->screen_tech; ?></td>
-							</tr>
-							<tr>
-								<th scope="row">Основная камера:</th>
-								<td><?= $row->camera."Мп" ?></td>
-							</tr>
-							<tr>
-								<th scope="row">Емкость аккумулятора: </th>
-								<td><?= $row->accumulator; ?> мАч</td>
-							</tr>
-							<tr>
-								<th scope="row">Цвет: </th>
-								<td><?= $row->color; ?></td>
-							</tr>
-
-							</tbody>
-						</table>
-					</div>
-
-				</div>
-			</a>
-		<?php endforeach; ?>
-
+				</a>
+			<?php endforeach; ?>
+		</div>
 	</div>
 </main>
-
-<div class="footer">
-	<div class="container">
-		<div class="up_footer">
-			<div class="logo">
-				<img src="./application/assets/img/logo_footer.svg" alt="">
-			</div>
-			<div class="categories">
-				<a href="">Ноутбуки</a>
-				<a href="">Планшеты</a>
-				<a href="">Смартфоны</a>
-				<a href="">Наушники</a>
-				<a href="">Телевизоры</a>
-				<a href="">Аксессуары</a>
-			</div>
-		</div>
-		<div class="down_footer">
-			<div>
-				<a href="">Политика конфиденциальности</a>
-				<a href="">О компании</a>
-				<a href="">Новости</a>
-				<a href="">Контакты</a>
-			</div>
-			<div>
-                <span>
-                    Copyright © 2001-2023 RudzPark. All rights reserved
-                </span>
-			</div>
-		</div>
-	</div>
-</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"

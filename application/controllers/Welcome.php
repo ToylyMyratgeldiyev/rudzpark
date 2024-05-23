@@ -5,8 +5,8 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('templates/header');
-		$this->load->view('index.php');
-		$this->load->view('templates/footer');
+		$this->load->model('GetModel');
+		$data['smartphones'] = $this->GetModel->getSmartphone();
+		$this->load->view('index.php', $data);
 	}
 }
