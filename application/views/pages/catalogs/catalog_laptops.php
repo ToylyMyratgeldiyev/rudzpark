@@ -58,7 +58,7 @@
 	<div class="container ">
 		<div>
 			<?php foreach ($laptops as $row) : ?>
-				<a href="<?= base_url('ProductsController/laptops'.$row->id) ?>">
+				<a href="<?= base_url('product/laptop/' . $row->id) ?>">
 					<div class="item">
 						<div class="img">
 							<img src="<?= "/my_uploads/" . $row->image_name; ?>" alt="">

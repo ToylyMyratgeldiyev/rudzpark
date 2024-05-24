@@ -2,6 +2,7 @@
 
 class DeleteController extends CI_Controller
 {
+
 	public function earphone($id)
 	{
 		$this->load->model('DeleteModel');

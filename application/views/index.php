@@ -52,7 +52,8 @@
 		<div class="light_btn_group">
 			<a href="">Войти</a>
 			<a href="">Регистрация</a>
-			<a href=""><img src="./application/assets/img/user_icon.png" alt="user"></a>
+			<a href="/admin"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Пока это /admin">
+				<img src="./application/assets/img/user_icon.png" alt="user"></a>
 		</div>
 	</div>
 </div>
@@ -65,7 +66,7 @@
 		<div class="search">
 			<input type="text" placeholder="Поиск по каталогу">
 		</div>
-		<div class="rainting">
+		<div class="rating">
 			<a href="#"><img src="./application/assets/img/rating.png" alt="raiting"></a>
 		</div>
 		<div class="like">
@@ -173,7 +174,7 @@
 						<div class="content">
 							<h3>Ноутбуки</h3>
 							<p>краткое описание категории</p>
-							<button>Перейти в каталог</button>
+							<button><a href="/laptops/" style="color: white; text-decoration: none;">Перейти в каталог</a></button>
 						</div>
 					</div>
 				</div>
@@ -318,19 +319,19 @@
 			<div class="catalog">
 				<ul>
 					<li>
-						<a href="">Ноутбуки</a>
+						<a href="/laptops">Ноутбуки</a>
 					</li>
 					<li>
-						<a href="">Планшеты</a>
+						<a href="/tablets">Планшеты</a>
 					</li>
 					<li>
-						<a href="">Смартфоны</a>
+						<a href="/products/">Смартфоны</a>
 					</li>
 					<li>
-						<a href="">Наушники</a>
+						<a href="/earphones">Наушники</a>
 					</li>
 					<li>
-						<a href="">Телевизоры</a>
+						<a href="/tv">Телевизоры</a>
 					</li>
 				</ul>
 			</div>
@@ -339,16 +340,16 @@
 			<div class="about">
 				<ul>
 					<li>
-						<a href="">Политика конфиденциальности</a>
+						<a href="#"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="В разработке">Политика конфиденциальности </a>
 					</li>
 					<li>
-						<a href="">О компании</a>
+						<a href="#"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="В разработке">О компании </a>
 					</li>
 					<li>
-						<a href="">Новости</a>
+						<a href="#"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="В разработке">Новости </a>
 					</li>
 					<li>
-						<a href="">Контакты</a>
+						<a href="#"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="В разработке">Контакты </a>
 					</li>
 				</ul>
 			</div>

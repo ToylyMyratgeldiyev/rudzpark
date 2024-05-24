@@ -9,6 +9,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['admin'] = 'AdminController/index';
 $route['admin/add'] = 'AddController/add_smartphone';
 $route['admin/add_airphone'] = 'AddController/add_airphone';
+
 $route['products'] = 'ProductsController/index';
 $route['tablets'] = 'ProductsController/tablets';
 $route['earphones'] = 'ProductsController/earphone';

@@ -33,7 +33,7 @@
 						</tr>
 						</thead>
 						<tbody>
-							<? foreach ($smartphones as $row ) : ?>
+							<?php foreach ($smartphones as $row ) : ?>
 							<tr>
 								<td><?= $row->manufacturer; ?></td>
 								<td><?= $row->model; ?></td>
