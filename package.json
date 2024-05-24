@@ -1,0 +1,11 @@
+{
+  "name": "ruzdpark",
+  "version": "1.0.0",
+  "description": "What is CodeIgniter ###################",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Toyly Myratgeldiyev",
+  "license": "ISC"
+}

@@ -1,0 +1,42 @@
+.productBody {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh; }
+  .productBody main .container {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .productBody main .container a {
+      text-decoration: none;
+      color: black; }
+      .productBody main .container a .item {
+        margin: 10px;
+        width: 200px;
+        box-shadow: -1px -2px 8px 0px rgba(34, 60, 80, 0.2);
+        padding: 5px; }
+        .productBody main .container a .item .img {
+          display: flex;
+          justify-content: center; }
+          .productBody main .container a .item .img img {
+            width: 70%; }
+        .productBody main .container a .item .price_name_raiting h4 {
+          margin-top: 10px;
+          font-size: 18px; }
+        .productBody main .container a .item .price_name_raiting .rainting {
+          display: flex;
+          align-items: center;
+          font-size: 12px; }
+          .productBody main .container a .item .price_name_raiting .rainting span {
+            margin-right: 10px; }
+        .productBody main .container a .item .price_name_raiting .price {
+          display: flex;
+          flex-direction: column; }
+        .productBody main .container a .item .options {
+          font-size: 10px; }
+          .productBody main .container a .item .options td, .productBody main .container a .item .options th {
+            padding: 5px; }
+
+/*# sourceMappingURL=products.css.map */

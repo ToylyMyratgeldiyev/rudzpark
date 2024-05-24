@@ -1,0 +1,68 @@
+.productBody{
+	display: flex;
+	justify-content: space-between;
+	height: 100vh;
+
+	main{
+		.container{
+
+			div{
+				display: flex;
+				max-width: 1200px;
+				//align-items: center;
+				flex-wrap: wrap;
+
+				a{
+					text-decoration: none;
+					color: black;
+					.item{
+						margin: 10px;
+						width: 300px;
+						//border: 2px solid lightslategrey;
+						box-shadow: -1px -2px 8px 0px rgba(34, 60, 80, 0.2);
+						padding: 5px;
+
+						.img{
+							display: flex;
+							justify-content: center;
+							img{
+								width: 70%;
+							}
+						}
+
+						.price_name_raiting{
+
+							h4{
+								margin-top: 10px;
+								font-size: 18px;
+							}
+
+							.rainting{
+								display: flex;
+								align-items: center;
+								font-size: 12px;
+
+								span{
+									margin-right: 10px;
+								}
+							}
+
+							.price{
+								display: flex;
+								flex-direction: column;
+							}
+						}
+
+						.options{
+							font-size: 10px;
+							td,th{
+								padding: 5px;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}

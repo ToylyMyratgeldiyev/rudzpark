@@ -1,2 +1,0 @@
-# rudzpark
-# Toyly Myratgeldiyev

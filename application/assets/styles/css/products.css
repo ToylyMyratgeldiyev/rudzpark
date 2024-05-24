@@ -1,0 +1,70 @@
+.productBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+}
+.productBody main .container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.productBody main .container div a {
+  text-decoration: none;
+  color: black;
+}
+.productBody main .container div a .item {
+  margin: 10px;
+  width: 300px;
+  -webkit-box-shadow: -1px -2px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: -1px -2px 8px 0px rgba(34, 60, 80, 0.2);
+  padding: 5px;
+}
+.productBody main .container div a .item .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.productBody main .container div a .item .img img {
+  width: 70%;
+}
+.productBody main .container div a .item .price_name_raiting h4 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.productBody main .container div a .item .price_name_raiting .rainting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+.productBody main .container div a .item .price_name_raiting .rainting span {
+  margin-right: 10px;
+}
+.productBody main .container div a .item .price_name_raiting .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.productBody main .container div a .item .options {
+  font-size: 10px;
+}
+.productBody main .container div a .item .options td, .productBody main .container div a .item .options th {
+  padding: 5px;
+}
