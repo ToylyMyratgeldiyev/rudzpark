@@ -1,3 +1,5 @@
-RUDZPARK
+RUDZPARK;
 
-Тойлы Мыратгельдиев
+Тойлы Мыратгельдиев;
+
+"/admin" - admin panel;
